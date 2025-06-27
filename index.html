@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N'TRAVLIW - Smart Travel Agency System</title>
+
+  
+  <link rel="icon" type="image/png" href="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/external-travel-airport-icongeek26-flat-icongeek26-1.png">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="#" class="logo">
+         <img src="assets/images/N_travliw-removebg-preview(1).png" alt="N'TRAVLIW logo">
+
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+             <img src="assets/images/N_travliw-removebg-preview(1).png" alt="N'TRAVLIW logo">
+
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>Destinations</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>Trips</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>Gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+
+            <li>
+              <a href="#login" class="navbar-link" data-nav-link>Agent Login</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary">Reserve now</button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title">Travel Made Simple Memories Made Unforgettable</h2>
+
+          <p class="hero-text">
+           "Travel the world your way. From iconic landmarks to hidden gems, plan your custom trip effortlessly with our intelligent reservation system."
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary">Discover Our Trips</button>
+
+            <button class="btn btn-secondary">Reserve Now </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #LOGIN FORM (Agent Login)
+      -->
+
+      <section class="login-form" id="login" style="display: none;">
+        <div class="container">
+          <h2 class="h2 section-title">Agent Login</h2>
+          
+          <form action="" class="login-form-wrapper">
+            <div class="input-wrapper">
+              <label for="agent-email" class="input-label">Email*</label>
+              <input type="email" name="email" id="agent-email" required placeholder="Your email" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="agent-password" class="input-label">Password*</label>
+              <input type="password" name="password" id="agent-password" required placeholder="Password" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Connect</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Destination*</label>
+              <input type="text" name="destination" id="destination" required placeholder="Choose destination" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label">Number of People</label>
+              <input type="number" name="people" id="people" required placeholder="Number of People" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Departure Date</label>
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Return Date</label>
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Search</button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #POPULAR DESTINATIONS
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">Discover With Us </p>
+
+          <h2 class="h2 section-title">Popular Destinations </h2>
+
+          <p class="section-text">
+            Discover the world's wonders. Every place, a new story. Every journey, uniquely yours
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets/images/sahra.jpg" alt="Sahara, Tamanrasset" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Tamanrasset</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Sahara Adventure</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Discover the immensity of the desert, magical sunsets and Tuareg culture.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets/images/La-casbah-dAlger.jpg" alt="Casbah, Alger" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Algiers</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Historic Casbah</a>
+                  </h3>
+
+                  <p class="card-text">
+                    A journey through time — from Ottoman streets to the shores of the Mediterranean
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="assets/images/bridge.jpg" alt="Ponts de Constantine" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Constantine</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">City of Bridges</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Discover the breathtaking beauty of the hanging city, where spectacular architecture meets sky-high bridges
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">More Destinations</button>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #TRAVEL PACKAGES
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+         <p class="section-subtitle">Organized Tours</p>
+
+          <h2 class="h2 section-title">Our Tour Packages</h2>
+          <p class="section-text">
+            Explore the world with our thoughtfully designed travel packages — including stays, transport, and guided experiences, so you can focus on the adventure
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="assets/images/sahara-desert-adventure.jpg" alt="Sahara Camel Caravan Tour" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Sahara Adventure – Full Tour</h3>
+
+                  <p class="card-text">
+                    Experience the magic of the Sahara with starry nights, camel treks across golden dunes, and visits to breathtaking oases. Includes transport, lodging, and meals
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 15</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Tamanrasset</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(32 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    45 000 DZD
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Reserve</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                 <img src="assets/images/historic-cities-in-the-us.jpg" alt="Historic Cities Circuit" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Historic Cities Tour</h3>
+
+                  <p class="card-text">
+                    Discover some of the world's most iconic historic cities — from Algiers and Rome to Kyoto and Istanbul. A journey through history, architecture, and unforgettable cuisine
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">5D/4N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 20</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">Multi-City</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(28 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    32 000 DZD
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Reserve</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="https://www.milleworld.com/wp-content/webp-express/webp-images/uploads/2022/09/algerianbeaches1-1536x1152.jpg.webp" alt="Mediterranean Coast Getaway" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Mediterranean Coast Getaway</h3>
+
+                  <p class="card-text">
+                    Relax on Algeria's most beautiful beaches with visits to Béjaïa, Jijel, and Annaba — the perfect coastal getaway for a serene and refreshing escape
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">4D/3N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">max: 12</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+                        <p class="text">East Coast</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(19 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    28 000 DZD
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Reserve</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">View All Trips</button>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #BOOKING FORM
+      -->
+
+      <section class="booking-form" id="booking" style="display: none;">
+        <div class="container">
+          <h2 class="h2 section-title">Travel Booking</h2>
+          
+          <form action="" class="booking-form-wrapper">
+            <div class="input-wrapper">
+              <label for="client-name" class="input-label">First Name</label>
+              <input type="text" name="name" id="client-name" required placeholder="Your First Name" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="client-email" class="input-label">Email*</label>
+              <input type="email" name="email" id="client-email" required placeholder="Your email" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="client-phone" class="input-label">Phone*</label>
+              <input type="tel" name="phone" id="client-phone" required placeholder="Your Phone Number" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="package-select" class="input-label">Chosen Trip</label>
+              <select name="package" id="package-select" required class="input-field">
+                <option value="">Select a Trip</option>
+                <option value="sahara">Sahara Adventure - 45 000 DZD</option>
+                <option value="cities">Historic Cities Tour - 32 000 DZD</option>
+                <option value="coast">Mediterranean Coast Getaway - 28 000 DZD</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="participants" class="input-label">Number of Participants </label>
+              <input type="number" name="participants" id="participants" required min="1" placeholder="Number of person" class="input-field">
+            </div>
+
+            <div class="price-display">
+              <h3>Total: <span id="total-price">0 DZD</span></h3>
+            </div>
+
+            <button type="submit" class="btn btn-secondary">Confirm and Pay</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Gallery Pictures </p>
+
+          <h2 class="h2 section-title">Memories of Travelers</h2>
+
+          <p class="section-text">
+           See the world through the lens of our travelers. Their photos capture the stunning beauty and rich variety of our global destinations
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-sahara-1.jpg" alt="Sunset in the Sahara">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-casbah-2.jpg" alt="Streets of the Casbah of Algiers">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-coast-3.jpg" alt="Jijel Beach">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-desert-4.jpg" alt="Camel caravan">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-tlemcen-5.jpg" alt="Architecture of Tlemcen">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Ready for adventure</p>
+
+            <h2 class="h2 section-title">Discover Algeria With N'TRAVLIW!</h2>
+
+            <p class="section-text">
+              Your personalized trip awaits. Our team of experts accompanies you in creating 
+              your tailor-made Algerian adventure. Contact us now!
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Contact Us!</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="assets/images/N_travliw-removebg-preview(1).png" alt="N'TRAVLIW logo">
+          </a>
+
+          <p class="footer-text">
+            N'TRAVLIW revolutionizes Algerian tourism with an intelligent booking system. 
+            Discover the authenticity of Algeria with our tailor-made trips and innovative technology.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Our team is at your disposal to create your perfect trip!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+213123456789" class="contact-link">+213 (0)1 23 45 67 89</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+              <a href="mailto:contact@ntravliw.dz" class="contact-link">contact@ntravliw.dz</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+              <address>Mohamed V Boulevard, Algiers, Algeria</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe to our newsletter to receive our best offers!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="">N'TRAVLIW</a>. All rights reserved - Smart Travel Agency System
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms and Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Guiddini Support</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
